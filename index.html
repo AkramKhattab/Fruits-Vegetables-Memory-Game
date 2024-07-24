@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game | Fruits & Vegetables</title>
+    <link rel="icon" href="apple.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Thasadith">
+</head>
+<body>
+    <div id="overlay">
+        <div id="popup"></div>
+    </div>
+
+    <main>
+        <article class="col-xs-12 col-md-9">
+            <h1>Fruits & Vegetables</h1>
+            <h6>Memory Game</h6>
+            <div id="plansza"></div>
+        </article>
+
+        <aside class="col-xs-12 col-md-3">
+            <div class="col-xs-3 col-xs-offset-1 col-md-offset-0 col-md-12">
+                <div>
+                    <h5>Timer</h5>
+                    <p id="time">00 : 00</p>
+                </div>
+                <div class="btn-timer hidden-xs hidden-sm">
+                    <button id="timerToggle" class="aside-btn zegar">
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                        pause timer
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-2 col-md-12">
+                <h5 id="up">pairs</h5>
+                <p id="selectedCards">0/10</p>
+            </div>
+            <div class="col-xs-2 col-md-12">
+                <h5 id="m">Moves</h5>
+                <p id="moves">0</p>
+            </div>
+            <div class="col-xs-2 col-md-12">
+                <div class="btn-timer hidden-md hidden-lg">
+                    <button id="timerToggleMobile" class="aside-btn zegar">
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                        pause timer
+                    </button>
+                </div>
+                <button id="startAgain" class="aside-btn rozpocznij">
+                    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                    Play again
+                </button>
+            </div>
+            <div class="col-xs-2 col-md-12">
+              <button id="darkModeToggle" class="aside-btn">
+                  <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span>
+                  Toggle Dark Mode
+              </button>
+          </div>
+        </aside>
+        <div class="clear"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
